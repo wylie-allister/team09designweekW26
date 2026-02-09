@@ -3,6 +3,9 @@ using UnityEngine.Rendering;
 
 public class Collectable : MonoBehaviour
 {
+
+    [SerializeField]
+    public int collectScore = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +24,7 @@ public class Collectable : MonoBehaviour
         {
             Debug.Log("Ping");
             Destroy(gameObject);
+            collectScore++;
         }
     }
 }

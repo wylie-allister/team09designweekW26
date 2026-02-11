@@ -56,5 +56,11 @@ TagManager:
   - name: UI
     uniqueID: 591491777
     locked: 0
+  - name: Burrow
+    uniqueID: 1639181483
+    locked: 0
+  - name: Surface
+    uniqueID: 2918244545
+    locked: 0
   m_RenderingLayers:
   - Default

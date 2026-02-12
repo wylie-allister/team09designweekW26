@@ -1995,8 +1995,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042637049}
-  - {fileID: 1492068745}
   - {fileID: 438640727}
+  - {fileID: 1492068745}
   - {fileID: 932305705}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NotificationBehavior: 0
-  m_MaxPlayerCount: -1
+  m_MaxPlayerCount: 4
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
@@ -2420,7 +2420,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 6264114325874547999, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+  m_PlayerPrefab: {fileID: 2211409900865175645, guid: 3c2da7661ee21004aa034594178fd512, type: 3}
   m_SplitScreen: 0
   m_MaintainAspectRatioInSplitScreen: 0
   m_FixedNumberOfSplitScreens: -1
@@ -6050,7 +6050,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 04128448210cb7e4abee11962d1b9a30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11421,6 +11421,10 @@ PrefabInstance:
     - target: {fileID: 545788339109641908, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
       propertyPath: m_Name
       value: Burrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 545788339109641908, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7830850589670318577, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
       propertyPath: m_LocalPosition.x

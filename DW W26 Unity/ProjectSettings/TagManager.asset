@@ -51,17 +51,20 @@ TagManager:
   - name: Walls
     uniqueID: 3681635201
     locked: 0
+  - name: BurrowMap
+    uniqueID: 1639181483
+    locked: 0
+  - name: SurfaceMap
+    uniqueID: 2918244545
+    locked: 0
+  - name: Burrow
+    uniqueID: 358894073
+    locked: 0
   - name: Players
     uniqueID: 971107229
     locked: 0
   - name: UI
     uniqueID: 591491777
-    locked: 0
-  - name: Burrow
-    uniqueID: 1639181483
-    locked: 0
-  - name: Surface
-    uniqueID: 2918244545
     locked: 0
   m_RenderingLayers:
   - Default

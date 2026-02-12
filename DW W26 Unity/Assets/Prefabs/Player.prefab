@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5016796433398627693}
   - component: {fileID: 8588839674365710260}
   - component: {fileID: -1938481882032988856}
+  - component: {fileID: -5049037488306646241}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -305,3 +306,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastPortalId: -1
+--- !u!114 &-5049037488306646241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6264114325874547999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c268d94b224f1354d852a8f7e4afed59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRole: {fileID: 8588839674365710260}
+  spriteRenderer: {fileID: 2500016798255280548}
+  bunnySprite: {fileID: 21300000, guid: b303be3b1217a964abec0be5cf5aaffd, type: 3}
+  foxSprite: {fileID: 21300000, guid: 7a2123f5eb5f6424eaa64989fd7eb20a, type: 3}

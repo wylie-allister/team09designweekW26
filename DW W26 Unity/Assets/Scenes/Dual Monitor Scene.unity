@@ -1825,7 +1825,7 @@ Transform:
   m_GameObject: {fileID: 486670439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.3, y: 1.66, z: 0}
+  m_LocalPosition: {x: 7.51, y: 3.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2418,8 +2418,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042637049}
-  - {fileID: 438640727}
   - {fileID: 1492068745}
+  - {fileID: 438640727}
   - {fileID: 932305705}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3007,13 +3007,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NotificationBehavior: 0
-  m_MaxPlayerCount: 4
+  m_NotificationBehavior: 2
+  m_MaxPlayerCount: -1
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892251502}
+        m_TargetAssemblyTypeName: PlayerSpawn, Assembly-CSharp
+        m_MethodName: OnPlayerJoined
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_PlayerLeftEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3029,7 +3041,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 2211409900865175645, guid: 3c2da7661ee21004aa034594178fd512, type: 3}
+  m_PlayerPrefab: {fileID: 6264114325874547999, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
   m_SplitScreen: 0
   m_MaintainAspectRatioInSplitScreen: 0
   m_FixedNumberOfSplitScreens: -1
@@ -3072,8 +3084,6 @@ MonoBehaviour:
   - {fileID: 1605863624}
   - {fileID: 1533450896}
   - {fileID: 1048517544}
-  - {fileID: 309928601}
-  - {fileID: 2008534069}
   <PlayerColors>k__BackingField:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
@@ -5662,7 +5672,7 @@ Transform:
   m_GameObject: {fileID: 1048517543}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.53, y: 8.9, z: 0}
+  m_LocalPosition: {x: 62.03, y: 7.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6969,7 +6979,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04128448210cb7e4abee11962d1b9a30, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9763,7 +9773,7 @@ Transform:
   m_GameObject: {fileID: 1533450895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 1.7, z: 0}
+  m_LocalPosition: {x: 61.93, y: 11.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9856,7 +9866,7 @@ Transform:
   m_GameObject: {fileID: 1605863623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.73, y: 1.5, z: 0}
+  m_LocalPosition: {x: 8.04, y: 12.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12640,10 +12650,6 @@ PrefabInstance:
     - target: {fileID: 545788339109641908, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
       propertyPath: m_Name
       value: Burrow
-      objectReference: {fileID: 0}
-    - target: {fileID: 545788339109641908, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7830850589670318577, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
       propertyPath: m_LocalPosition.x

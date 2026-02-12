@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 696551776775533643}
   - component: {fileID: 1540942730230650348}
   m_Layer: 0
-  m_Name: Burrow
+  m_Name: Nest
   m_TagString: Burrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

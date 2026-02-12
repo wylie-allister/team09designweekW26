@@ -135,6 +135,10 @@ MonoBehaviour:
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a9b87ec3-3170-44c6-836e-3e3642dc7905
+    m_ActionName: 'Player/Dash[/XInputControllerWindows/rightShoulder,/XInputControllerWindows1/rightShoulder]'
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7370077686563149376}
         m_TargetAssemblyTypeName: TeamSelector, Assembly-CSharp
@@ -148,7 +152,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 95356f15-edc1-4dfb-b1b6-0d795cd48059
+    m_ActionId: f0460835-e6e5-4dcb-a0fb-2aea1cd0c39c
     m_ActionName: 'Menu/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
@@ -164,7 +168,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 612d6625-61fe-4355-93fc-9d8705384e71
+    m_ActionId: da786ead-4534-4376-a89f-ceffda12b9b3
     m_ActionName: 'Menu/Submit[/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth]'
   - m_PersistentCalls:
       m_Calls:
@@ -180,7 +184,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 8279cb7c-423a-436d-bebf-4e6778d51085
+    m_ActionId: d359b07a-e7c4-408b-aeda-7910fb4c363a
     m_ActionName: 'Menu/Cancel[/XInputControllerWindows/buttonEast,/XInputControllerWindows1/buttonEast]'
   - m_PersistentCalls:
       m_Calls:
@@ -196,11 +200,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 686e20b3-7d7b-43ce-82d1-145ecad1b6b4
+    m_ActionId: 9d4b4934-6eb4-4c86-971b-867266c9db10
     m_ActionName: 'Menu/StartGame[/XInputControllerWindows/start,/XInputControllerWindows1/start]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Menu
+  m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &7370077686563149376

@@ -195,6 +195,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
     m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: RabbitDash, Assembly-CSharp
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a9b87ec3-3170-44c6-836e-3e3642dc7905
+    m_ActionName: 'Player/Dash[/XInputControllerWindows/rightShoulder,/XInputControllerWindows1/rightShoulder]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f0460835-e6e5-4dcb-a0fb-2aea1cd0c39c
+    m_ActionName: 'Menu/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: da786ead-4534-4376-a89f-ceffda12b9b3
+    m_ActionName: 'Menu/Submit[/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d359b07a-e7c4-408b-aeda-7910fb4c363a
+    m_ActionName: 'Menu/Cancel[/XInputControllerWindows/buttonEast,/XInputControllerWindows1/buttonEast]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9d4b4934-6eb4-4c86-971b-867266c9db10
+    m_ActionName: 'Menu/StartGame[/XInputControllerWindows/start,/XInputControllerWindows1/start]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -217,6 +249,9 @@ MonoBehaviour:
   <SpriteRenderer>k__BackingField: {fileID: 2500016798255280548}
   <Rigidbody2D>k__BackingField: {fileID: 3752404572598628836}
   <MoveSpeed>k__BackingField: 10
+  rabbitDashSpeed: 25
+  rabbitDashDuration: 0.3
+  rabbitDashCooldown: 5
 --- !u!50 &3752404572598628836
 Rigidbody2D:
   serializedVersion: 5

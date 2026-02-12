@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 
 public class Collectable : MonoBehaviour
 {
-
+    public PlayerRole pr;
 
     public CarrotPile carrotP;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +20,7 @@ public class Collectable : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && carrotP.collectScore <= 2)
+        if (pr.role == PlayerRole.Role.Rabbit && carrotP.collectScore <= 2)
         {
             Debug.Log("Ping");
             Destroy(gameObject);

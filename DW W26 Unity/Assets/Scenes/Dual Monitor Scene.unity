@@ -256,6 +256,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377129}
   m_CullTransparentMesh: 1
+--- !u!114 &141172608 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1540942730230650348, guid: 767110ec871b16c44beb9f7a3faf933a, type: 3}
+  m_PrefabInstance: {fileID: 7735389315823530497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b93c66684b02140aaadb3f76ce69dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &175331286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,6 +275,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (13)
@@ -357,6 +376,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (8)
@@ -419,6 +446,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (16)
@@ -532,6 +567,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (11)
@@ -1839,6 +1882,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (6)
@@ -2284,6 +2335,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (15)
@@ -2431,6 +2490,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot
@@ -2580,6 +2647,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (1)
@@ -2721,6 +2796,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (19)
@@ -3251,6 +3334,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (4)
@@ -5593,6 +5684,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (5)
@@ -6018,6 +6117,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (7)
@@ -6080,6 +6187,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (18)
@@ -6142,6 +6257,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (10)
@@ -9694,6 +9817,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (9)
@@ -9787,6 +9918,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (12)
@@ -9880,6 +10019,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (17)
@@ -9942,6 +10089,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (2)
@@ -10353,6 +10508,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (3)
@@ -10517,6 +10680,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 354872277}
     m_Modifications:
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: pr
+      value: 
+      objectReference: {fileID: 8588839674365710260, guid: b71987c1c5531f240b519f5ee173f642, type: 3}
+    - target: {fileID: 5781367793285269731, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
+      propertyPath: carrotP
+      value: 
+      objectReference: {fileID: 141172608}
     - target: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
       propertyPath: m_Name
       value: Carrot (14)

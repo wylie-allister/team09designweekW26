@@ -6,9 +6,14 @@ public class GameManager : MonoBehaviour
     public enum Winner { None, Bunnies, Foxes }
     public static Winner LastWinner = Winner.None;
 
+    [Header("Match Timer")]
+    [SerializeField] private float matchDuration = 120f; // seconds (change in inspector)
+    private float timeRemaining;
+    private bool timerRunning;
+
     [Header("Scenes")]
-    [SerializeField] private string gameplaySceneName = "Dual Monitor Scene"; // set to your gameplay scene name
-    [SerializeField] private string endSceneName = "EndScene";               // set to your end scene name
+    [SerializeField] private string gameplaySceneName = "Dual Monitor Scene"; 
+    [SerializeField] private string endSceneName = "EndScene";               
 
     public static GameManager Instance { get; private set; }
 
@@ -34,7 +39,7 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // IMPORTANT: keeps GameManager alive from Team Select -> Gameplay -> EndScene
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnEnable()
@@ -47,11 +52,26 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    private void Start()
+    {
+        // Safety: if hit Play directly in gameplay scene
+        if (SceneManager.GetActiveScene().name == gameplaySceneName)
+        {
+            InitializeGameplayState();
+        }
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Only set up match state when gameplay scene loads
+        Debug.Log($"[GameManager] Scene loaded: '{scene.name}' (expecting gameplay: '{gameplaySceneName}')");
+
         if (scene.name != gameplaySceneName) return;
 
+        InitializeGameplayState();
+    }
+
+    private void InitializeGameplayState()
+    {
         gameEnded = false;
         depositedCarrots = 0;
         rabbitsOutCount = 0;
@@ -60,10 +80,32 @@ public class GameManager : MonoBehaviour
         // Count carrots present at the start of the match
         totalCarrotsInLevel = GameObject.FindGameObjectsWithTag("Carrot").Length;
 
-        Debug.Log($"[GameManager] Gameplay loaded. Total carrots in level: {totalCarrotsInLevel}");
+        // Start timer
+        timeRemaining = matchDuration;
+        timerRunning = true;
+
+        Debug.Log($"[GameManager] Gameplay initialized. Total carrots: {totalCarrotsInLevel}, Timer: {matchDuration}s");
     }
 
+    private void Update()
+    {
+        if (!timerRunning || gameEnded) return;
+
+        timeRemaining -= Time.deltaTime;
+
+        if (timeRemaining <= 0f)
+        {
+            timeRemaining = 0f;
+            timerRunning = false;
+
+            Debug.Log("TIME UP! Foxes win.");
+            FoxWin();
+        }
+    }
+
+    // ----------------------------
     // BUNNY WIN
+    // ----------------------------
     public void AddDepositedCarrots(int amount)
     {
         if (gameEnded) return;
@@ -82,13 +124,16 @@ public class GameManager : MonoBehaviour
         if (gameEnded) return;
 
         gameEnded = true;
+        timerRunning = false;
         LastWinner = Winner.Bunnies;
-        Debug.Log("BUNNIES WIN! All carrots deposited. Loading end scene...");
 
+        Debug.Log("BUNNIES WIN! Loading end scene...");
         SceneManager.LoadScene(endSceneName);
     }
 
+    // ----------------------------
     // FOX WIN
+    // ----------------------------
     public void CheckFoxWin()
     {
         if (gameEnded) return;
@@ -107,7 +152,6 @@ public class GameManager : MonoBehaviour
 
         rabbitsOutCount = outCount;
 
-        // If BOTH rabbits are out, foxes win
         if (rabbitsOutCount >= 2)
         {
             FoxWin();
@@ -119,13 +163,16 @@ public class GameManager : MonoBehaviour
         if (gameEnded) return;
 
         gameEnded = true;
+        timerRunning = false;
         LastWinner = Winner.Foxes;
-        Debug.Log("FOXES WIN! Both bunnies eliminated. Loading end scene...");
 
+        Debug.Log("FOXES WIN! Loading end scene...");
         SceneManager.LoadScene(endSceneName);
     }
 
+    // ----------------------------
     // RABBIT RESPAWN + STUN
+    // ----------------------------
     public void RespawnRabbit(Transform rabbit)
     {
         if (rabbitRespawnPoint == null || rabbit == null) return;
@@ -144,25 +191,23 @@ public class GameManager : MonoBehaviour
 
     private System.Collections.IEnumerator StunRespawnRoutine(GameObject rabbit, float stunSeconds)
     {
-        // Disable movement during stun
         var controller = rabbit.GetComponent<PlayerController>();
         if (controller != null) controller.enabled = false;
 
-        // Stop movement instantly
         var rb = rabbit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.linearVelocity = Vector2.zero;
 
-        // Wait
         yield return new WaitForSeconds(stunSeconds);
 
-        // Respawn at safe point
         RespawnRabbit(rabbit.transform);
 
-        // Re-enable movement (only if not dead)
         var lives = rabbit.GetComponent<PlayerLives>();
         bool isDead = (lives != null && lives.IsDead);
 
         if (!isDead && controller != null)
             controller.enabled = true;
     }
+
+    // Optional getter if we want to show UI timer later
+    public float GetTimeRemaining() => timeRemaining;
 }

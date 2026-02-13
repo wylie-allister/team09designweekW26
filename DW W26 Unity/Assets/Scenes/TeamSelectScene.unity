@@ -1656,6 +1656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 894087ce3a2feb14e8eab1ab153fd89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  matchDuration: 360
   gameplaySceneName: Dual Monitor Scene
   endSceneName: EndScene
   totalCarrotsInLevel: 0

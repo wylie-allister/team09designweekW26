@@ -223,3 +223,5 @@ MonoBehaviour:
   moveBounds: {fileID: 0}
   cursorSpeed: 800
   statusText: {fileID: 0}
+  forcedFont: {fileID: 11400000, guid: 92ec83c838fdf4747849cb54591c93e3, type: 2}
+  forcedMaterial: {fileID: -3161672448555531532, guid: 92ec83c838fdf4747849cb54591c93e3, type: 2}

@@ -200,4 +200,10 @@ public class TeamSelector : MonoBehaviour
     {
         UpdateStatusPreview();
     }
+
+    // Load Game Scene For Button
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene("Dual Monitor Scene");
+    }
 }

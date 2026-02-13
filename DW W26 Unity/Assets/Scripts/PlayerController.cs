@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     // Used for physics movement
     [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
 
+    EditUIDashCD dashCD;
+
 
     [Header("Top-Down Movement")]
 
@@ -50,6 +52,9 @@ public class PlayerController : MonoBehaviour
     // When the player is allowed to dash again
     private float nextDashTime = 0f;
 
+    // When the player last dashed successfully
+    private float lastDashTime = 0f;
+
     // Is the player currently dashing?
     private bool isDashing;
 
@@ -66,6 +71,8 @@ public class PlayerController : MonoBehaviour
     {
         // Get the playable component (Rabbit or Fox)
         playerRole = GetComponent<PlayerRole>();
+
+        dashCD = FindAnyObjectByType<EditUIDashCD>();
     }
 
     // This starts a dash
@@ -124,6 +131,12 @@ public class PlayerController : MonoBehaviour
                 lastMoveDir = moveInput.normalized;
             }
         }
+
+        // update fill progress of cooldown UI if cooldown is still active
+        if (Time.time <= nextDashTime)
+        {
+            dashCD.setCooldownProgress(lastDashTime, nextDashTime);
+        }
     }
 
     private void FixedUpdate()
@@ -175,6 +188,8 @@ public class PlayerController : MonoBehaviour
            
         // Set next allowed dash time
         nextDashTime = Time.time + rabbitDashCooldown;
+        lastDashTime = Time.time;
+        dashCD.setCooldownProgress(lastDashTime, nextDashTime);
 
         // Start the dash in the last movement direction
         StartDash(lastMoveDir, rabbitDashSpeed, rabbitDashDuration);

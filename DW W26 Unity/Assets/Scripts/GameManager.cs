@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     [Header("State")]
     public bool gameEnded;
 
+    SetTimers timers;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -101,6 +103,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("TIME UP! Foxes win.");
             FoxWin();
         }
+
+        timers.SetTimersText(timeRemaining); // hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     }
 
     // ----------------------------

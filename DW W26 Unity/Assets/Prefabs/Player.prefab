@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 9194206533959161014}
   - component: {fileID: -307999755577203902}
   - component: {fileID: -373251323307107992}
-  - component: {fileID: -4498810525315565201}
+  - component: {fileID: -1975534011587633511}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 2
---- !u!114 &-4498810525315565201
+--- !u!114 &-1975534011587633511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,10 +426,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6264114325874547999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd591130179a5445826f9bf50881bd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e8bc991f28ac2644b3b76c2aae6f4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagCooldown: 1
+  attackRadius: 0.65
+  attackCooldown: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
   stunSeconds: 1
   carrotDropPrefab: {fileID: 6066726785278065458, guid: e39f2214f964c2a4e85214842a0937f2, type: 3}
   dropScatterRadius: 0.35

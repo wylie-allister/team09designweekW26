@@ -1,38 +1,34 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EndScreenUI : MonoBehaviour
 {
-    [SerializeField] private TMP_Text titleText;
-
-    [SerializeField] private string gameplaySceneName = "Dual Monitor Scene";
-    [SerializeField] private string menuSceneName = "Team Select";
+    [Header("Win Backgrounds")]
+    [SerializeField] private GameObject bunnyWinBG;
+    [SerializeField] private GameObject foxWinBG;
 
     private void Start()
     {
-        if (titleText == null) return;
+        bunnyWinBG.SetActive(false);
+        foxWinBG.SetActive(false);
 
+        // Activate based on winner
         if (GameManager.LastWinner == GameManager.Winner.Bunnies)
-            titleText.text = "BUNNIES WIN!";
+        {
+            bunnyWinBG.SetActive(true);
+        }
         else if (GameManager.LastWinner == GameManager.Winner.Foxes)
-            titleText.text = "FOXES WIN!";
-        else
-            titleText.text = "GAME OVER";
+        {
+            foxWinBG.SetActive(true);
+        }
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(gameplaySceneName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Dual Monitor Scene");
     }
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene(menuSceneName);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Team Select");
     }
 }
